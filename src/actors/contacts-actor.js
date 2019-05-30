@@ -2,7 +2,7 @@ const { start, dispatch, spawn } = require('nact');
 const uuid = require('uuid/v4');
 const system = start();
 const ContactProtocolTypes = require('../messages');
-const { GET_CONTACTS, GET_CONTACT, CREATE_CONTACT, UPDATE_CONTACT, REMOVE_CONTACT } = ContactProtocolTypes;
+const { GET_CONTACTS, GET_CONTACT, CREATE_CONTACT, UPDATE_CONTACT, REMOVE_CONTACT, SUCCESS, NOT_FOUND } = ContactProtocolTypes;
 
 const contactsService = spawn(
   system,
